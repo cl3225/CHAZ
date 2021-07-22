@@ -30,7 +30,7 @@ IX. [License](https://github.com/cl3225/CHAZ#license)
 ## I. Overview 
 
 
-![flow_chart](https://user-images.githubusercontent.com/46905677/126520861-3761c297-4651-43c2-b275-863dca35ad52.png)
+![flow_chart](https://user-images.githubusercontent.com/46905677/126708930-1c8e8d0e-1312-4bfe-9a41-801f2b71f2bc.png)
 
 
 The Columbia HAZard model (CHAZ) is a statistical-dynamical downscaling model for estimating tropical cyclone hazard. The CHAZ model consists of three primary components for describing tropical cyclone activity from genesis to lysis; these components are genesis, track, and intensity modules. The genesis module uses Tropical Cyclone Genesis Index (TCGI, developed by [Tippett et al, 2011](https://doi.org/10.1175/2010JCLI3811.1) to estimate the seeding rate of the storm precursors. The seeds are then passed to a  Beta-Advection Model (BAM) that moves the storm forward with giving environmental sterring flow. The intensity module then evolves storms beyond genesis using an Autoregressive Model that involves a deterministic and a stochastic forcing elements. The underlying science of the CHAZ model can be found at [Lee et al. 2018](https://doi.org/10.1002/2017MS001186)).
