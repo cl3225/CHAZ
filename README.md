@@ -123,15 +123,16 @@ In CHAZ, Namelist.py defines all global variables such as the source of the glob
 
 
 
-`pre`: the directory containing data used for preprocessing and data found in preprocessing
+`pre`: the directory containing data output from preprocessing 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `coefficient_meanstd.nc`: containing the mean and standard deviations of the predictors for historical events (i.e., those saved in bt_global_predictors.nc)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `coefficient_meanstd.nc`: containing the mean and standard deviations of the predictors for historical events
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Cov*YYYY.nc`: wind covariance of historical events
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Cov*YYYY.nc`: monthly-daily wind covaraince
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `YYYY*r1i1p1f1.nc`:CMIP6 historic data used in `getMeanStd.py` to find mean and standard deviations of predictors for historical events
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `YYYY*r1i1p1f1.nc`: intensity model predictors
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `A_*YYYYMM.nc`: covariance, track, and time details of synthetic wind
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `A_*YYYYMM.nc`: covariance matrix
+
 
 
 
