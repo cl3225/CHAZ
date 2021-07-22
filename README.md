@@ -143,13 +143,13 @@ In CHAZ, Namelist.py defines all global variables such as the source of the glob
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `calA.py`: calculate mean and covariance of synthetic wind
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `module_riskModel.py`: contains functions necessary to calculate genesis, track, and predictors
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `module_riskModel.py`: contain functions necessary to calculate genesis, track, and predictors
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `caldetsto_track_lysis.py`: return intensities based on calGenisi.py and module_GenBamPred.py output
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `preprocess.py`: preprocess historical and synthetic wind data
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `preprocess.py`: preprocess global model to a standard 2x2 grid format
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  `module_GenBamPred.py`: calculates tracks via Beta-Advection Model
