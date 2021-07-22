@@ -177,8 +177,6 @@ In CHAZ, Namelist.py defines all global variables such as the source of the glob
 
 ## IV. CHAZ-pre
 
-### 1) Download data, getting PI and TCGI
-
 Preprocessing involves populating '\pre' wutg `r1i1p1_YYYY.nc`, `coefficientmeanstd.nc` and `A_YYYYMM.nc` from `calWindCov.py`, `calA.py`, `getMeanStd.py`, and `preprocess.py`. See examples for more details.
 
 ## V) Checking Initial conditions
@@ -186,44 +184,9 @@ Prior to conducting CHAZ downscaling, we should check the initial conditions tho
 
 ## VI) Running CHAZ (Downscaling)
 
-### 1) Changing Global Variables in `Namelist.py`
+1. Changing Global Variables in `Namelist.py`
 
-
-`Model = 'ERAInterim'` - model that provides reanalysis data (str), default is European Center for Medium Range Weather Forecasts interim reanalysis
-
-`ENS = 'r1i1p1'` - global model (str)
-
-`TCGIinput = 'TCGI_CRH_SST'` - environmental parameters used as input for TCGI (str)
-
-`CHAZ_ENS = 1` - number of track ensemble members per year (int)
-
-`CHAZ__Int_ENS = 40` - number of intensity ensemble members (int)
-
-`seedN = 1000` - annual seeding rate for random seeding (int). This function is currently under development.
-
-`landmaskfile = 'landmask.nc'` - land mask file (NETCDF)
-
-`ipath = ''` - location of environmental data TCGI, and mean/std of the predictors (str)
-
-`opath = ''` - location of pik file with observed best track global predictors (str)
-
-`obs_bt_path = ''` - location of observed best track data (str)
-
-`Year1 = ` - the beginning year (int)
-
-`Year2 = ` - tne end inner year (int)
-
-`runCHAZ = ` - if `True`, CHAZ will run, if `False` CHAZ will not run (bool)
-
-`calGen = ` - if `True`, genesis will  be calculated, if `False` genesis will not be calculated (bool)
-
-`calBam = ` - if `True`, track will  be calculated, if `False` track will not be calculated (bool)
-
-`calInt = ` - if `True`, intensity will  be calculated, if `False` intensity will not be calculated (bool)
-
-### 2) CHAZ Downscaling
-
-1. Make sure all the inputs are in the ipath, opath, and obs_bt_path 
+2. Make sure all the inputs are in the ipath, opath, and obs_bt_path 
 
 2. Check that `output` is empty before running CHAZ
 
