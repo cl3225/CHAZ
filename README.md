@@ -108,11 +108,11 @@ In CHAZ, Namelist.py defines all global variables such as the source of the glob
 
 
 
-`input`: the directory containing default input data necessary for running CHAZ. These data are generated during the CHAZ development stage and are used in Lee et al. 2018
+`input`: the directory containing default input data necessary for running CHAZ. These data are generated during the CHAZ development stage and are used in [Lee et al. 2018](https://doi.org/10.1002/2017MS001186)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `bt_*.nc`: best track basin-wide inputs for CHAZ
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `bt_*.nc`: basin-wide best track data 
        
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `bt_global_predictors`: CHAZ predictors for historical events (from `bt_*.nc`). The predictors is calculated using monthly ERA-Interim reanalysis data. This file is used for calculating the seeding rate ratio for genesis model and for getting the regression stochastic error terms for intensity model
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `bt_global_predictors`: CHAZ predictors for historical events (from `bt_*.nc`) from monthly ERA-Interim reanalysis data. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `landmask.nc`: landmask data
 
