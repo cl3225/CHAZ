@@ -182,7 +182,7 @@ Preprocessing involves populating '\pre' wutg `r1i1p1_YYYY.nc`, `coefficientmean
 ## V) Checking Initial conditions
 Prior to conducting CHAZ downscaling, we should check the initial conditions those are nessary for CHAZ runs. They are TCGI_YYYY.mat, r1i1p1_YYYY.nc (from calPreprocess), A_YYYYMM.nc (from calA), coefficent_meanstd.nc (getMeanStd.py).
 
-## VI) Running CHAZ (Downscaling)
+## VI) Chaz Downscaling
 
 1. Changing Global Variables in `Namelist.py`
 
