@@ -1,4 +1,4 @@
-HAZ (Columbia Tropical Cyclone Hazard Model)
+CHAZ (Columbia Tropical Cyclone Hazard Model)
 
 ## Table of Contents
 I. [Overview](https://github.com/cl3225/CHAZ.github.io#i-overview)
