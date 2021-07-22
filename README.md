@@ -1,31 +1,31 @@
 CHAZ (Columbia Tropical Cyclone Hazard Model)
 
 ## Table of Contents
-I. [Overview](https://github.com/cl3225/CHAZ.github.io#i-overview)
+I. [Overview](https://github.com/cl3225/CHAZ#i-overview)
 
-II. [Getting Started With CHAZ](https://github.com/cl3225/CHAZ.github.io#ii-getting-started-with-chaz)
+II. [Getting Started With CHAZ](https://github.com/cl3225/CHAZ#ii-getting-started-with-chaz)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) [Getting the code](https://github.com/cl3225/CHAZ.github.io#1-getting-the-code)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) [Getting the code](https://github.com/cl3225/CHAZ#1-getting-the-code)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) [System Dependencies](https://github.com/cl3225/CHAZ.github.io#2-system-dependencies)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) [System Dependencies](https://github.com/cl3225/CHAZ#2-system-dependencies)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3) [Operating System](https://github.com/cl3225/CHAZ.github.io#3-operating-system)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3) [Operating System](https://github.com/cl3225/CHAZ#3-operating-system)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4) [Setting Up Python Environment](https://github.com/cl3225/CHAZ.github.io#4-setting-up-python-environment)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4) [Setting Up Python Environment](https://github.com/cl3225/CHAZ#4-setting-up-python-environment)
 
-III. [Basic CHAZ Structure](https://github.com/cl3225/CHAZ.github.io#iii-basic-chaz-structure)
+III. [Basic CHAZ Structure](https://github.com/cl3225/CHAZ#iii-basic-chaz-structure)
 
-IV. [CHAZ-pre](https://github.com/cl3225/CHAZ.github.io#iv-chaz-pre)
+IV. [CHAZ-pre](https://github.com/cl3225/CHAZ#iv-chaz-pre)
 
-V. [Checking Initial conditions](https://github.com/cl3225/CHAZ.github.io#v-checking-initial-conditions)
+V. [Checking Initial conditions](https://github.com/cl3225/CHAZ#v-checking-initial-conditions)
 
-VI. [Running CHAZ (Downscaling)](https://github.com/cl3225/CHAZ.github.io#vi-chaz-downscaling)
+VI. [Running CHAZ (Downscaling)](https://github.com/cl3225/CHAZ#vi-chaz-downscaling)
 
-VII. [Output of CHAZ](https://github.com/cl3225/CHAZ.github.io#vii-output-of-chaz)
+VII. [Output of CHAZ](https://github.com/cl3225/CHAZ#vii-output-of-chaz)
 
-VIII. [Disclaimer](https://github.com/cl3225/CHAZ.github.io#disclaimer)
+VIII. [Disclaimer](https://github.com/cl3225/CHAZ#disclaimer)
 
-IX. [License](https://github.com/cl3225/CHAZ.github.io#license)
+IX. [License](https://github.com/cl3225/CHAZ#license)
 		
 ## I. Overview 
 
