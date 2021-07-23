@@ -41,7 +41,7 @@ Generally speaking, there are two primary steps for running CHAZ: preprocessing 
 
 ### 1) Getting the code
 
-TBD 
+CHAZvBeta folder at top of the page. 
 
 ### 2) System dependencies 
 
