@@ -189,7 +189,7 @@ Prior to conducting CHAZ downscaling, we should check the initial conditions tho
 
 3. Simply type the following command:`$ ./CHAZ.py`
 
-See [downscaling example](https://drive.google.com/drive/folders/1Ro1DmHRd0us0Uz9c8jFpeo1BA2gBw3mm?usp=sharing) for reference.
+See [downscaling example](https://drive.google.com/drive/folders/1UvaZ6W4B4oCNCQtSVq0ayA1bF3S2JJLb?usp=sharing) for reference.
 
 ##  VII) Output of CHAZ
 
