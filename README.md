@@ -174,7 +174,7 @@ In CHAZ, Namelist.py defines all global variables such as the source of the glob
 
 ## IV. CHAZ-pre
 
-Preprocessing involves populating '\pre' wutg `r1i1p1_YYYY.nc`, `coefficientmeanstd.nc` and `A_YYYYMM.nc` from `calWindCov.py`, `calA.py`, `getMeanStd.py`, and `preprocess.py`. See [preprocessing example](https://drive.google.com/drive/folders/1Ro1DmHRd0us0Uz9c8jFpeo1BA2gBw3mm?usp=sharing).
+Preprocessing involves populating '\pre' with `r1i1p1_YYYY.nc`, `coefficientmeanstd.nc` and `A_YYYYMM.nc` from `calWindCov.py`, `calA.py`, `getMeanStd.py`, and `preprocess.py`. See [preprocessing example](https://drive.google.com/drive/folders/1Ro1DmHRd0us0Uz9c8jFpeo1BA2gBw3mm?usp=sharing).
 
 ## V) Checking Initial conditions
 Prior to conducting CHAZ downscaling, we should check the initial conditions those are nessary for CHAZ runs. They are TCGI_YYYY.mat, r1i1p1_YYYY.nc (from calPreprocess), A_YYYYMM.nc (from calA), coefficent_meanstd.nc (getMeanStd.py).
