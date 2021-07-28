@@ -255,7 +255,7 @@ for iy in range(len(years)):
 plt.colorbar(label='intensity')
 plt.xlabel('longitude (degrees)')
 plt.ylabel('latitude (degrees)')
-plt.title('CHAZ Storm tracks- ERA5 2000: color coded by intensity')
+plt.title('CHAZ Storm tracks- ERA5 2000-2002')
 plt.savefig('CHAZ_storm_tracks_ERA5.png')                                                    
 
 ```
