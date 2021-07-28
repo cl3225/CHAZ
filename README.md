@@ -202,7 +202,10 @@ The dimensions of each netCDF file are lifelength, stormID, and ensembleNum (the
 <type 'netCDF4._netCDF4.Dataset'>
 root group (NETCDF4 data model, file format HDF5):
     dimensions(sizes): lifelength(125), stormID(146), ensembleNum(40)
-    variables(dimensions): float64 lifelength(lifelength), float64 stormID(stormID), float64 ensembleNum(ensembleNum), float64 latitude(lifelength,stormID), float64 Mwspd(ensembleNum,lifelength,stormID), float64 time(lifelength,stormID), float64 longitude(lifelength,stormID), int64 year(stormID)
+    variables(dimensions): float64 lifelength(lifelength), float64 stormID(stormID), 
+    float64 ensembleNum(ensembleNum), float64 latitude(lifelength,stormID), 
+    float64 Mwspd(ensembleNum,lifelength,stormID), float64 time(lifelength,stormID), 
+    float64 longitude(lifelength,stormID), int64 year(stormID)
     groups:
 ```
 "lifelength" is the amount length of time of the storm's life. "stormID" represents how many storms have been run at this year.  "ensembleNum" is the number of members in the intensity ensemble.
