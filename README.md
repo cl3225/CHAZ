@@ -198,13 +198,18 @@ The output of CHAZ gives a set of netCDF files with names `[model name]_[year]_e
 The dimensions of each netCDF file are lifelength, stormID, and ensembleNum (the specific size of the dimensions can be found using the command `$ ncinfo [filename]`, which returns the following:
 
 
-![ncinfo output](https://user-images.githubusercontent.com/46905677/127381517-77339a8e-550d-42c3-839b-b38eb31214c9.png)
-
+```
+<type 'netCDF4._netCDF4.Dataset'>
+root group (NETCDF4 data model, file format HDF5):
+    dimensions(sizes): lifelength(125), stormID(146), ensembleNum(40)
+    variables(dimensions): float64 lifelength(lifelength), float64 stormID(stormID), float64 ensembleNum(ensembleNum), float64 latitude(lifelength,stormID), float64 Mwspd(ensembleNum,lifelength,stormID), float64 time(lifelength,stormID), float64 longitude(lifelength,stormID), int64 year(stormID)
+    groups:
+```
 "lifelength" is the amount length of time of the storm's life. "stormID" represents how many storms have been run at this year.  "ensembleNum" is the number of members in the intensity ensemble.
 
 One possible use of the output data is to create the below track plot: 
 
-![Track plot](https://user-images.githubusercontent.com/46905677/127390505-caff31f5-8315-4cd3-bea2-5e2447fbfec6.png)
+![Track plot](https://user-images.githubusercontent.com/46905677/127392019-95e3e19f-b3b1-4283-8fc1-e847c366ce2a.png)
 
 The below snippet of code creates the above plot: 
 
@@ -218,12 +223,7 @@ import cartopy.feature as cfeature
 import matplotlib.ticker as mticker
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 
-filename = 'ERA5_2000_ens000.nc'
-data = nc.Dataset(filename)
-lon = data['longitude'][:]
-lat = data['latitude'][:]
-mwspd = data['Mwspd'][:]
-intensity = []
+years = ['2000','2001','2002']
 
 fig = plt.figure(figsize=(8,4))
 ax = fig.add_subplot(111)
@@ -240,15 +240,20 @@ gl.yformatter = LATITUDE_FORMATTER
 ax.add_feature(cart.feature.BORDERS)
 ax.set_extent([-180,180,-50,50])
 
-iN = 0
-plt.scatter(lon.ravel(),lat.ravel(),s=1,c=mwspd[iN,:,:].ravel())
+for iy in range(len(years)):
+        filename = 'ERA5_'+years[iy]+'_ens000.nc'
+        data = nc.Dataset(filename)
+        lon = data['longitude'][:]
+        lat = data['latitude'][:]
+        mwspd = data['Mwspd'][:]
+        iN = 0
+        plt.scatter(lon.ravel(),lat.ravel(),s=1,c=mwspd[iN,:,:].ravel())
 
 plt.colorbar(label='intensity')
 plt.xlabel('longitude (degrees)')
 plt.ylabel('latitude (degrees)')
 plt.title('CHAZ Storm tracks- ERA5 2000: color coded by intensity')
-plt.savefig('CHAZ_storm_tracks_ERA5_2000.png')
-~                                                    
+plt.savefig('CHAZ_storm_tracks_ERA5.png')                                                    
 
 ```
 ## Disclaimer
