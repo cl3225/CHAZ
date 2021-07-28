@@ -212,7 +212,7 @@ root group (NETCDF4 data model, file format HDF5):
 
 One possible use of the output data is to create the below track plot: 
 
-![Track plot](https://user-images.githubusercontent.com/46905677/127392019-95e3e19f-b3b1-4283-8fc1-e847c366ce2a.png)
+![Track plot](https://user-images.githubusercontent.com/46905677/127393311-decd6ce0-161d-4286-97c5-80dc466359fa.png)
 
 The below snippet of code creates the above plot: 
 
