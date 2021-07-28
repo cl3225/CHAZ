@@ -208,8 +208,46 @@ One possible use of the output data is to create the below track plot:
 
 The below snippet of code creates the above plot: 
 
-![Code](https://user-images.githubusercontent.com/46905677/127382569-802840f4-d93c-4bf7-9bb4-00118ae3aa6b.png)
+```ruby
+import matplotlib.pyplot as plt
+import netCDF4 as nc
+import numpy as np
+import cartopy as cart
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+import matplotlib.ticker as mticker
+from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 
+filename = 'ERA5_2000_ens000.nc'
+data = nc.Dataset(filename)
+lon = data['longitude'][:]
+lat = data['latitude'][:]
+number_of_storms = lon.shape[1]
+mwspd = data['Mwspd'][:]
+intensity = []
+
+fig = plt.figure(figsize=(8,4))
+ax = fig.add_subplot(111)
+ax = plt.axes(projection=ccrs.PlateCarree())
+ax.coastlines(zorder=100)
+gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
+        linewidth=0.5, color='gray', alpha=0.5, linestyle='--')
+gl.xlabels_top = False
+gl.ylabels_right = False
+gl.xlocator = mticker.FixedLocator(range(-180,180,60))
+gl.ylocator = mticker.FixedLocator(range(-90, 90,15))
+gl.xformatter = LONGITUDE_FORMATTER
+gl.yformatter = LATITUDE_FORMATTER
+ax.add_feature(cart.feature.BORDERS)
+ax.set_extent([-180,180,-50,50])
+
+iN = 10
+for i in range(number_of_storms):
+    print(i)
+    plt.scatter(lon[:,i],lat[:,i],s=1)
+plt.colorbar(label='intensity')
+
+```
 ## Disclaimer
 
 The output is not bias-corrected. Some bias correction may be necessary to estimate hurricane activity at the regional level.
