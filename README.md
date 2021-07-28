@@ -204,7 +204,7 @@ The dimensions of each netCDF file are lifelength, stormID, and ensembleNum (the
 
 One possible use of the output data is to create the below track plot: 
 
-![Track plot](https://user-images.githubusercontent.com/46905677/127382931-8a34a1e2-9b77-4d48-9f93-253bc674f3ce.png)
+![Track plot](https://user-images.githubusercontent.com/46905677/127390505-caff31f5-8315-4cd3-bea2-5e2447fbfec6.png)
 
 The below snippet of code creates the above plot: 
 
@@ -222,7 +222,6 @@ filename = 'ERA5_2000_ens000.nc'
 data = nc.Dataset(filename)
 lon = data['longitude'][:]
 lat = data['latitude'][:]
-number_of_storms = lon.shape[1]
 mwspd = data['Mwspd'][:]
 intensity = []
 
@@ -241,11 +240,15 @@ gl.yformatter = LATITUDE_FORMATTER
 ax.add_feature(cart.feature.BORDERS)
 ax.set_extent([-180,180,-50,50])
 
-iN = 10
-for i in range(number_of_storms):
-    print(i)
-    plt.scatter(lon[:,i],lat[:,i],s=1)
+iN = 0
+plt.scatter(lon.ravel(),lat.ravel(),s=1,c=mwspd[iN,:,:].ravel())
+
 plt.colorbar(label='intensity')
+plt.xlabel('longitude (degrees)')
+plt.ylabel('latitude (degrees)')
+plt.title('CHAZ Storm tracks- ERA5 2000: color coded by intensity')
+plt.savefig('CHAZ_storm_tracks_ERA5_2000.png')
+~                                                    
 
 ```
 ## Disclaimer
