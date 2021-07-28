@@ -202,7 +202,7 @@ The dimensions of each netCDF file are lifelength, stormID, and ensembleNum (the
 
 "lifelength" is the amount length of time of the storm's life. "stormID" represents how many storms have been run at this year.  "ensembleNum" is the number of members in the intensity ensemble.
 
-One example use of the output data is to create the below track plot: 
+One possible use of the output data is to create the below track plot: 
 
 ![Track plot](https://user-images.githubusercontent.com/46905677/127382931-8a34a1e2-9b77-4d48-9f93-253bc674f3ce.png)
 
