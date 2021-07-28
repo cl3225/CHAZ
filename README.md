@@ -243,13 +243,13 @@ gl.yformatter = LATITUDE_FORMATTER
 ax.add_feature(cart.feature.BORDERS)
 ax.set_extent([-180,180,-50,50])
 
+iN = 0
 for iy in range(len(years)):
         filename = 'ERA5_'+years[iy]+'_ens000.nc'
         data = nc.Dataset(filename)
         lon = data['longitude'][:]
         lat = data['latitude'][:]
         mwspd = data['Mwspd'][:]
-        iN = 0
         plt.scatter(lon.ravel(),lat.ravel(),s=1,c=mwspd[iN,:,:].ravel())
 
 plt.colorbar(label='intensity')
