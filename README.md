@@ -228,12 +228,9 @@ SOFTWARE.
 
 ## Publications
 
-
-## Publications
+C.-Y. Lee, M.K. Tippett, A.H. Sobel, and S.J. Camargo, 2018. An environmentally forced tropical cyclone hazard model. Journal of Advances in Modeling Earth Systems, 10, 233-241, doi: 10.1002/2017MS001186.
 
 A.H. Sobel, C.-Y. Lee, S.J. Camargo, K.T. Mandli, K.A. Emanuel, P. Mukhopadhyay, and M. Mahakur, 2019. Tropical cyclone hazard to Mumbai in the recent historical climate. Monthly Weather Review, 147, 2355-2366, doi: 10.1175/MWR-D-18-0419.1.
-
-C.-Y. Lee, M.K. Tippett, A.H. Sobel, and S.J. Camargo, 2018. An environmentally forced tropical cyclone hazard model. Journal of Advances in Modeling Earth Systems, 10, 233-241, doi: 10.1002/2017MS001186.
 
 C.-Y. Lee, S.J. Camargo, A.H. Sobel, and M.K. Tippett, 2020. Statistical-dynamical downscaling projections of tropical cyclone activity in a warming climate: Two diverging genesis scenarios. Journal of Climate, 33, 4815-4834, doi: 10.1175/JCLI-D-19-0452.1.
 
