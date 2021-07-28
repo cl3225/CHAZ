@@ -195,7 +195,10 @@ See [downscaling example](https://drive.google.com/drive/folders/1UvaZ6W4B4oCNCQ
 
 The output of CHAZ gives a set of netCDF files with names `[model name]_[year]_ens[ensemble number].nc` where "model name" is the model used (also specified in `Namelist.py`), "year" is the year of the simulation, and "ensemble number" is the ensemble number represented with three digits. 
 
-The dimensions of each netCDF file are lifelength, stormID, and ensembleNum (the specific size of the dimensions can be found using the command `$ ncinfo [filename]`. "lifelength" is the amount length of time of the storm's life. "stormID" represents how many storms have been run at this year.  "ensembleNum" is the number of members in the intensity ensemble.
+The dimensions of each netCDF file are lifelength, stormID, and ensembleNum (the specific size of the dimensions can be found using the command `$ ncinfo [filename]`, which returns the following:
+![ncinfo output](https://user-images.githubusercontent.com/46905677/127381517-77339a8e-550d-42c3-839b-b38eb31214c9.png)
+
+"lifelength" is the amount length of time of the storm's life. "stormID" represents how many storms have been run at this year.  "ensembleNum" is the number of members in the intensity ensemble.
 
 ## Disclaimer
 
