@@ -21,7 +21,7 @@ Overview of CHAZvBeta contents; preprocessing is flagged as 'True', 'output' has
 - src: Directory containing source code 
 
 
-Detail instructions please see: https://cl3225.github.io/CHAZ.github.io/ 
+Detail instructions please see: https://github.com/cl3225/CHAZ/blob/main/README.md 
 
 - tools: Directory containing tools used in source code, CHAZ.py, and Namelist.py
 
