@@ -41,7 +41,8 @@ def resize_basinData():
 	 nd += bt1['PIslp'].shape[1]
 	bt = {}
 	for iib in range(0,len(basinName),1):
-	 	bt1 = xr.open_dataset(f)
+	 	f =gv.ipath + 'bt_'+ib+'.nc'   
+		bt1 = xr.open_dataset(f)
 	        for iv in bt1.variables.keys():
 			if iib == 0:
 				if np.size(bt1.variables[iv].shape) >1:
