@@ -41,6 +41,7 @@ def resize_basinData():
 	 nd += bt1['PIslp'].shape[1]
 	bt = {}
 	for iib in range(0,len(basinName),1):
+		ib = basinName[iib]
 	 	f =gv.ipath + 'bt_'+ib+'.nc'   
 		bt1 = xr.open_dataset(f)
 	        for iv in bt1.variables.keys():
