@@ -108,7 +108,7 @@ In CHAZ, Namelist.py defines all global variables such as the source of the glob
 
 
 
-`input`: the directory containing default input data necessary for running CHAZ. These data are generated during the CHAZ development stage and are used in [Lee et al. 2018](https://doi.org/10.1002/2017MS001186)
+`input`: the directory containing default input data necessary for running CHAZ. These data are generated during the CHAZ development stage and are used in [Lee et al. 2018](https://doi.org/10.1002/2017MS001186). Check https://drive.google.com/file/d/1v_NyAzqGyfUNolY-FOAg9P0_itExPGEC/view?usp=sharing for input data.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `bt_*.nc`: basin-wide best track data 
        
