@@ -54,7 +54,7 @@ The CHAZ model was developed in python2 and has only been running on linux and M
 
 ### 4) Setting Up Python Environment
 
-1) Install Anaconda 3 or Python 2 
+1) Install Anaconda or Python 2. The current code and instruction below is for py2. One can easily convert the code to py3 using '2to3'. 
 2) Setting up virtual environment
 
 	2a. If [Anaconda Python Distribution](https://www.anaconda.com/) is Installed, run the following commands : 
