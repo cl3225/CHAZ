@@ -37,6 +37,7 @@ The Columbia HAZard model (CHAZ) is a statistical-dynamical downscaling model fo
 
 Generally speaking, there are two primary steps for running CHAZ: preprocessing and downscaling.  Preprocessing includes collecting global model data, calculating PI, TCGI, wind covariance matrix, putting the data into a standard format for downscaling calculation, etc. Preprocessing codes are model-dependent, meaning that you will need to modify them when switch global models. Codes for conducting downscaling are insensitive to what global model you are using. 
 
+2026 updates: For PI and TCGI: https://github.com/yixia23/TCGI
 
 ## II. Getting Started with CHAZ
 
